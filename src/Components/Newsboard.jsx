@@ -9,7 +9,7 @@ const Newsboard = ({category}) => {
     const fetchArticles = async () => {
       const apiKey = import.meta.env.VITE_API_KEY;
       console.log('API Key:', apiKey); // Log the API key to the console
-      const url = `https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=${apiKey}`;
+      const url = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=${apiKey}`;
       try {
         const response = await fetch(url);
         if (!response.ok) {
