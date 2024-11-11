@@ -1,8 +1,18 @@
-# React + Vite
+News Application
+A React-based news application that fetches the latest headlines from India based on different categories using the NewsAPI. This app allows users to select categories such as Technology, Business, Health, Sports, and Entertainment.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features
+Category Selection: Users can view news based on different categories (General, Technology, Business, Health, Sports, Entertainment).
+Default Country (India): News is fetched by default from India (country=IN).
+Responsive Design: The app is designed to be mobile-friendly.
+Interactive UI: The UI is styled with Bootstrap and custom CSS to provide a responsive and user-friendly experience.
+Error Handling: Displays loading indicators and error messages if news data can't be fetched.
+Technologies Used
+Frontend:
 
-Currently, two official plugins are available:
+React.js (for building UI components)
+Bootstrap (for styling and responsive design)
+NewsAPI (for fetching news data)
+Backend:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+NewsAPI (external service to fetch news data)
