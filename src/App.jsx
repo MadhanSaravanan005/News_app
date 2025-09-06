@@ -1,10 +1,11 @@
 // src/App.jsx
 import React, { useState } from "react";
-import Navbar from "./Components/Navbar";
+import Navbar from "./components/Navbar";
 import Newsboard from "./Components/Newsboard";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './Components/styles.css'; // Corrected the import statement for the CSS file
+// Removed duplicate import
 
 const App = () => {
   const [category, setCategory] = useState("general");
