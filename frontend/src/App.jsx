@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import Navbar from "./components/Navbar.jsx";
-import NewsBoard from "./components/NewsBoard.jsx";
-import Login from "./components/Login.jsx";
-import Register from "./components/Register.jsx";
-import SavedNews from "./components/SavedNews.jsx";
-import Preferences from "./components/Preferences.jsx";
-import SearchBar from "./components/SearchBar.jsx";
-import Subscriptions from "./components/Subscriptions.jsx";
+import Navbar from "./comp/Navbar.jsx";
+import NewsBoard from "./comp/NewsBoard.jsx";
+import Login from "./comp/Login.jsx";
+import Register from "./comp/Register.jsx";
+import SavedNews from "./comp/SavedNews.jsx";
+import Preferences from "./comp/Preferences.jsx";
+import SearchBar from "./comp/SearchBar.jsx";
+import Subscriptions from "./comp/Subscriptions.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const App = () => {
