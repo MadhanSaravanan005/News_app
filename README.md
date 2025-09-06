@@ -5,12 +5,6 @@ Perfect 🎯 Adding badges makes your repo look super professional and modern. H
 ```markdown
 # 📖 News Mag  
 
-[![GitHub stars](https://img.shields.io/github/stars/madhanmohan2005/News-mag?style=social)](https://github.com/madhanmohan2005/News-mag/stargazers)  
-[![GitHub forks](https://img.shields.io/github/forks/madhanmohan2005/News-mag?style=social)](https://github.com/madhanmohan2005/News-mag/network/members)  
-[![GitHub issues](https://img.shields.io/github/issues/madhanmohan2005/News-mag)](https://github.com/madhanmohan2005/News-mag/issues)  
-[![GitHub last commit](https://img.shields.io/github/last-commit/madhanmohan2005/News-mag)](https://github.com/madhanmohan2005/News-mag/commits/main)  
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)  
-
 A **React-based News Web Application** that fetches and displays the latest news articles in a clean, modern interface. Built for learning, experimenting, and showcasing how to integrate APIs with a responsive frontend.  
 
 ---
