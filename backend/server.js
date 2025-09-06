@@ -12,9 +12,7 @@ import subscriptionRoutes from "./routes/subscription.js";
 import prefRoutes from "./routes/preferences.js";
 import searchHistoryRoutes from "./routes/searchHistory.js";
 
-
-
-
+import { createServer } from "http";
 
 dotenv.config();
 connectDB();
@@ -24,7 +22,7 @@ const app = express();
 // Middleware
 app.use(
   cors({
-    origin: "http://localhost:5173", // frontend URL
+    origin: "*", // Vercel handles frontend separately; allow all origins or set your domain
     credentials: true,
   })
 );
@@ -38,7 +36,11 @@ app.use("/api/subscriptions", subscriptionRoutes);
 app.use("/api/preferences", prefRoutes);
 app.use("/api/search-history", searchHistoryRoutes);
 
+// Export for Vercel serverless
+export default app;
 
-// Server
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`✅ Server running on port ${PORT}`));
+// Optional: for local testing
+if (process.env.NODE_ENV === "development") {
+  const PORT = process.env.PORT || 5000;
+  app.listen(PORT, () => console.log(`✅ Server running on port ${PORT}`));
+}
