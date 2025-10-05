@@ -22,7 +22,7 @@ const app = express();
 // Middleware
 app.use(
   cors({
-    origin: "*", // Vercel handles frontend separately; allow all origins or set your domain
+    origin: process.env.FRONTEND_URL || "*", // Use environment variable for production, allow all for development
     credentials: true,
   })
 );
@@ -36,11 +36,11 @@ app.use("/api/subscriptions", subscriptionRoutes);
 app.use("/api/preferences", prefRoutes);
 app.use("/api/search-history", searchHistoryRoutes);
 
-// Export for Vercel serverless
-export default app;
 
-// Optional: for local testing
-if (process.env.NODE_ENV === "development") {
-  const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000;
   app.listen(PORT, () => console.log(`✅ Server running on port ${PORT}`));
-}
+
+// // Optional: for local testing
+// if (process.env.NODE_ENV === "development") {
+  
+// }
