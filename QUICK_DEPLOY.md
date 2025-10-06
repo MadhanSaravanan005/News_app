@@ -33,9 +33,8 @@ Your project is ready! The error you saw was because Railway tried to deploy fro
 
 **Backend Service Variables:**
 ```
-MONGO_URI=mongodb+srv://madhanmohan:Madhan9843@cluster0.ehd1ndc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
-JWT_SECRET=6140e8540724313fbac3683c1bd76595f3fd7fb77ef5b51857bc9eebd575a96650de9ca20b6cb3e6449124017854cd93a6aa35a1d42984e662407be30f83ac6d
-NEWS_API_KEY=f7865749456a4f82830aab09558e2ef3
+MONGO_URI=mongodb+srv://madhanmohan:Madhan9843@cluster0.ehd1ndc.mongodb.net/student-records?retryWrites=true&w=majority&appName=Cluster0
+JWT_SECRET=ca35c51c4bf9fbdb1edeb02f961446a4f03240155cd23be6f5e66a86eb7cbc4618e5bdf3b44d77b67039bb2a9c38e6329e8253fd914d79dc1177124919081851
 NODE_ENV=production
 ```
 
