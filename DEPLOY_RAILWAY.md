@@ -146,8 +146,9 @@ app.use(
 
 Create these in Railway backend service:
 ```
-MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/newsapp
-JWT_SECRET=your-super-secure-jwt-secret-key-here
+MONGO_URI=mongodb+srv://madhanmohan:Madhan9843@cluster0.ehd1ndc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+JWT_SECRET=6140e8540724313fbac3683c1bd76595f3fd7fb77ef5b51857bc9eebd575a96650de9ca20b6cb3e6449124017854cd93a6aa35a1d42984e662407be30f83ac6d
+NEWS_API_KEY=f7865749456a4f82830aab09558e2ef3
 FRONTEND_URL=https://your-frontend-name.up.railway.app
 NODE_ENV=production
 ```

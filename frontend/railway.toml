@@ -4,3 +4,6 @@ builder = "NIXPACKS"
 [deploy]
 startCommand = "npm run preview"
 restartPolicyType = "ON_FAILURE"
+
+[nixpacks]
+staticAssets = "dist"
