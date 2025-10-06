@@ -1,9 +1,5 @@
 [build]
-builder = "NIXPACKS"
+builder = "nixpacks"
 
 [deploy]
 startCommand = "npm run preview"
-restartPolicyType = "ON_FAILURE"
-
-[variables]
-NODE_ENV = "production"
